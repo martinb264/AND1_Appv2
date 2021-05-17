@@ -1,9 +1,11 @@
 package com.example.and1app.shared;
 
-public class GroundHeat {
+import java.io.Serializable;
+
+public class GroundHeat implements Serializable {
     private String groundHeatID;
     private int temperature;
-    private Boolean temperatureOn;
+    private boolean temperatureOn;
 
     public GroundHeat() {
     }
@@ -28,11 +30,12 @@ public class GroundHeat {
         this.temperature = temperature;
     }
 
-    public Boolean getTemperatureOn() {
+    public boolean getTemperatureOn() {
         return temperatureOn;
     }
 
-    public void setTemperatureOn(Boolean temperatureOn) {
+    public void setTemperatureOn(boolean temperatureOn) {
         this.temperatureOn = temperatureOn;
     }
+
 }

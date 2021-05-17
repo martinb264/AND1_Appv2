@@ -31,7 +31,7 @@
         android:layout_weight="1" >
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/editButton"
             android:layout_width="107dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

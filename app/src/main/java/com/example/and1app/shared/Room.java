@@ -1,7 +1,10 @@
 package com.example.and1app.shared;
 
 
-public class Room {
+import java.io.Serializable;
+
+public class Room implements Serializable {
+    private String uniqueID;
     private String title;
     private String thermostatID;
     private int roomTemperature;
@@ -71,6 +74,14 @@ public class Room {
         this.groundHeat = groundHeat;
     }
 
+
+    public String getUniqueID() {
+        return uniqueID;
+    }
+
+    public void setUniqueID(String uniqueID) {
+        this.uniqueID = uniqueID;
+    }
 
     public int getRoomTemperature() {
         return roomTemperature;

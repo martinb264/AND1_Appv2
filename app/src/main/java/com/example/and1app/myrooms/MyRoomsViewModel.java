@@ -30,7 +30,9 @@ public class MyRoomsViewModel extends AndroidViewModel {
     public void init()
     {
         String userID = userRepository.getCurrentUser().getValue().getUid();
-        myRoomsRepository.init(userID);
+        if (userID != null) {
+            myRoomsRepository.init(userID);
+        }
     }
     public void signOut()
     {

@@ -21,6 +21,7 @@ public class RoomLiveData extends LiveData<ArrayList<Room>> {
            for (DataSnapshot ds : snapshot.getChildren()) {
                    Room room = ds.getValue(Room.class);
                    Log.d("TAG", room.getTitle());
+                   room.setUniqueID(ds.getRef().getKey());
                rooms.add(room);
            }
             setValue(rooms);

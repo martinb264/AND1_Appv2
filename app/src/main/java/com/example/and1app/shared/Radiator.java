@@ -1,6 +1,8 @@
 package com.example.and1app.shared;
 
-public class Radiator {
+import java.io.Serializable;
+
+public class Radiator implements Serializable {
     private int temperature;
     private boolean temperatureOn;
     private String id;

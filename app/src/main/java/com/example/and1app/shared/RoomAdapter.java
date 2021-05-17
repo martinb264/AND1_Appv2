@@ -4,6 +4,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.example.and1app.R;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -32,10 +34,17 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.ViewHolder> {
         return new ViewHolder(view);
     }
 
+    public void setData(ArrayList<Room> rooms)
+    {
+        this.rooms = rooms;
+        notifyDataSetChanged();
+    }
+
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
     holder.title.setText(String.valueOf(rooms.get(position).getTitle()));
     holder.temperature.setText(String.valueOf(rooms.get(position).getRoomTemperature()));
+
     }
 
     @Override
@@ -57,7 +66,10 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.ViewHolder> {
 
         @Override
         public void onClick(View v) {
+            System.out.println("dasda");
             listItem.onListItemClick(getAdapterPosition());
+
         }
+
     }
 }

@@ -87,6 +87,7 @@ public class WeatherFragment extends Fragment {
             ActivityCompat.requestPermissions(getActivity(),new String[]{Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.ACCESS_COARSE_LOCATION},REQUEST_LOCATION);
 
         }
+
        getLocation(getView());
         System.out.println(longitude + " Longitude");
         System.out.println(latitude + " Latitude");
