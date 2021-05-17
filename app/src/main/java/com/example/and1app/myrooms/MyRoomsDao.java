@@ -23,7 +23,6 @@ public class MyRoomsDao {
    private FirebaseDatabase database = FirebaseDatabase.getInstance("https://sep-4-77004-default-rtdb.europe-west1.firebasedatabase.app/");
     private DatabaseReference myRef;
     private RoomLiveData roomLiveData;
-    private String userId;
 
 
 

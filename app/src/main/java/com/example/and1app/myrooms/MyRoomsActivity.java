@@ -53,16 +53,13 @@ public class MyRoomsActivity extends AppCompatActivity implements RoomAdapter.On
         roomList = findViewById(R.id.rv);
         roomList.setLayoutManager(new LinearLayoutManager(this));
         roomList.hasFixedSize();
-        myRoomsViewModel.getRooms().observe(this,room -> {
-            for (int i=0; i<room.size(); i++) {
-                if (room.get(i) != null) {
-                        rooms.add(room.get(i));
-                }
-                roomAdapter.setData(rooms);
-            }
-        });
-        roomAdapter = new RoomAdapter(rooms,this);
+        roomAdapter = new RoomAdapter(MyRoomsActivity.this,rooms,this);
         roomList.setAdapter(roomAdapter);
+        myRoomsViewModel.getRooms().observe(this,room -> {
+                roomAdapter.setData(room);
+        });
+
+
 
 
     }
@@ -79,6 +76,13 @@ public class MyRoomsActivity extends AppCompatActivity implements RoomAdapter.On
     {
         Intent intent = new Intent(this, CreateRoomActivity.class);
         startActivity(intent);
+    }
+
+    public void onEdit(Room room)
+    {
+        Intent intent1 = new Intent(this, EditRoomActivity.class);
+        intent1.putExtra("room", room);
+        startActivity(intent1);
     }
 
 

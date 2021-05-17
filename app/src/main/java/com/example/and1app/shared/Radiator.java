@@ -3,8 +3,8 @@ package com.example.and1app.shared;
 import java.io.Serializable;
 
 public class Radiator implements Serializable {
-    private int temperature;
-    private boolean temperatureOn;
+    private int temperature = 0;
+    private boolean temperatureOn = false;
     private String id;
 
     public Radiator() {

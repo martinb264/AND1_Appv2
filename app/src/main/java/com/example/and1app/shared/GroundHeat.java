@@ -4,8 +4,8 @@ import java.io.Serializable;
 
 public class GroundHeat implements Serializable {
     private String groundHeatID;
-    private int temperature;
-    private boolean temperatureOn;
+    private int temperature = 0;
+    private boolean temperatureOn = false;
 
     public GroundHeat() {
     }
