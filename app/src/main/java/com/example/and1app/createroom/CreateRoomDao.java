@@ -27,7 +27,7 @@ public class CreateRoomDao {
         return instance;
     }
 
-    public void createRoom(Room room,String userID)
+    public void createRoom(Room room)
     {
         myRef.push().setValue(room);
     }

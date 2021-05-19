@@ -65,7 +65,7 @@ public class CreateRoomActivity extends AppCompatActivity {
     {
         if (!thermostatID.getText().toString().equals(""))
         {
-            Toast.makeText(this,"Connectio established to thermostat",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Connection established to thermostat",Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -78,8 +78,7 @@ public class CreateRoomActivity extends AppCompatActivity {
             Toast.makeText(this,"Error: No Title",Toast.LENGTH_SHORT).show();
         } else if (radiatorID.getText().toString().equals("") && groundHeatID.getText().toString().equals("") && thermostatID.getText().toString().equals(""))
         {
-            room = new Room(title.getText().toString());
-            createRoomViewModel.createRoom(room);
+            Toast.makeText(this,"Please insert an id for atleast one of the options",Toast.LENGTH_SHORT).show();
         } else if (groundHeatID.getText().toString().equals("") && !radiatorID.getText().toString().equals("") && thermostatID.getText().toString().equals(""))
         {
             Radiator radiator = new Radiator(radiatorID.getText().toString());

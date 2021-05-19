@@ -56,7 +56,6 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.ViewHolder> {
             Intent intent1 = new Intent(activity, EditRoomActivity.class);
             intent1.putExtra("room", rooms.get(position));
             activity.startActivity(intent1);
-
         }
     });
 

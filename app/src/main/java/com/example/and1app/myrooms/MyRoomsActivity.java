@@ -44,7 +44,7 @@ public class MyRoomsActivity extends AppCompatActivity implements RoomAdapter.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_rooms);
         myRoomsViewModel = new ViewModelProvider(this).get(MyRoomsViewModel.class);
-
+        System.out.println("init");
         myRoomsViewModel.init();
         Toolbar toolbar = findViewById(R.id.my_toolbar);
         editButton = findViewById(R.id.editButton);
@@ -98,9 +98,6 @@ public class MyRoomsActivity extends AppCompatActivity implements RoomAdapter.On
                 myRoomsViewModel.signOut();
                 return true;
             case R.id.Settings:
-                Intent intent1 = new Intent(this, EditRoomActivity.class);
-                 intent1.putExtra("room", rooms.get(0));
-                 startActivity(intent1);
                 return true;
 
             default:

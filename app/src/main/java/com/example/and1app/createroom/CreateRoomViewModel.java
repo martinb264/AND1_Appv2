@@ -22,7 +22,7 @@ public class CreateRoomViewModel extends AndroidViewModel {
 
     public void  createRoom(Room room)
     {
-        createRoomRepository.createRoom(room,getCurrentUser().toString());
+        createRoomRepository.createRoom(room);
     }
 
     public void init()

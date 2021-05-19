@@ -58,10 +58,10 @@
         android:id="@+id/textView3"
         android:layout_width="213dp"
         android:layout_height="26dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="80dp"
         android:text="Enter Radiator ID(Optional)"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintHorizontal_bias="0.211"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/createTitle" />
 
@@ -106,11 +106,11 @@
         android:id="@+id/button"
         android:layout_width="122dp"
         android:layout_height="47dp"
-        android:layout_marginTop="60dp"
-        android:text="Connect"
+        android:layout_marginTop="112dp"
         android:onClick="checkRadiator"
+        android:text="Connect"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintHorizontal_bias="0.652"
         app:layout_constraintStart_toEndOf="@+id/createRadiatorID"
         app:layout_constraintTop_toBottomOf="@+id/createTitle" />
 
@@ -172,6 +172,17 @@
         android:text="Connect"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="18dp"
+        android:text="Please insert atleast one of the following"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createTitle" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

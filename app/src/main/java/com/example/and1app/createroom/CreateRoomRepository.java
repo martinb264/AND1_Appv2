@@ -21,8 +21,8 @@ public class CreateRoomRepository {
     {
         createRoomDao.init(userID);
     }
-    public void createRoom(Room room,String userID)
+    public void createRoom(Room room)
     {
-        createRoomDao.createRoom(room,userID);
+        createRoomDao.createRoom(room);
     }
 }

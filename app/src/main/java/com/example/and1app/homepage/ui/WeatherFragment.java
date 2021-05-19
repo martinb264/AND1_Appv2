@@ -123,7 +123,7 @@ public class WeatherFragment extends Fragment {
 
     public void find_weather()
     {
-        String url = "https://api.openweathermap.org/data/2.5/weather?lat=55.858131&lon=9.847588&appid=5298ef7d68c196025a066080596c4a18&units=metric";
+        String url = "https://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"&appid=5298ef7d68c196025a066080596c4a18&units=metric";
         JsonObjectRequest json = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
