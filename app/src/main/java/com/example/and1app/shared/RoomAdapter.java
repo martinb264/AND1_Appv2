@@ -82,7 +82,6 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.ViewHolder> {
 
         @Override
         public void onClick(View v) {
-            System.out.println("dasda");
             listItem.onListItemClick(getAdapterPosition());
 
         }

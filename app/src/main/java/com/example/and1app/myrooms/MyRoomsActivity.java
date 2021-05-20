@@ -107,8 +107,6 @@ public class MyRoomsActivity extends AppCompatActivity implements RoomAdapter.On
 
     @Override
     public void onListItemClick(int clickedItemIndex) {
-        System.out.println(clickedItemIndex);
         int roomNumber = clickedItemIndex + 1;
-        Toast.makeText(this,"Room number: " + roomNumber,Toast.LENGTH_SHORT).show();
     }
 }
