@@ -1,4 +1,4 @@
-package com.example.and1app.homepage.ui;
+package com.example.and1app.homepage.fragments;
 
 import android.content.Context;
 

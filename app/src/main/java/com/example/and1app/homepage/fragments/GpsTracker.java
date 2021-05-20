@@ -1,4 +1,4 @@
-package com.example.and1app.homepage.ui;
+package com.example.and1app.homepage.fragments;
 
 import android.Manifest;
 import android.app.Activity;
@@ -16,8 +16,6 @@ import android.os.IBinder;
 import android.provider.Settings;
 import android.util.Log;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
 
 public class GpsTracker extends Service implements LocationListener {

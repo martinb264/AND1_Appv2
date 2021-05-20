@@ -15,7 +15,7 @@ import android.widget.Toast;
 import com.example.and1app.R;
 import com.example.and1app.myrooms.MyRoomsActivity;
 import com.example.and1app.signin.SignInActivity;
-import com.example.and1app.homepage.ui.SectionsPagerAdapter;
+import com.example.and1app.homepage.fragments.SectionsPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
